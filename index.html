@@ -1,192 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
     <title>BarberShop</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-
-    <header>
-
-        <nav>
-            <a class = "link" href="./index.html"> <img src="./images/logo.svg" alt="logotype" width="69" ></a>
-            <ul>
-                <li><a class = "link" href="">About</a></li>
-                <li><a class = "link" href="">Services and prices</a></li>
-                <li><a class = "link" href="">Barbers</a></li>
-                <li><a class = "link" href="">Contacts</a></li>
-            </ul>
-        </nav>
-        
-             <a class = "link" href="tel:+380441111111">+38 044 111 11 11</a> 
-             <button type="button">ONLINE-BOOKING</button>
-         
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men&#10076;s haircuts.
-            We work quickly, carefully and with style.</p>
-        <ul>
-            <li> <button type="button">Back</button> </li>
-            <li> <button type="button">Forward</button> </li>
-        </ul>
+    <header class="header">
+        <div class="header-container">
+            <div class="aside">
+                <a href="">
+                    <svg width="69" height="55" class="logo">
+                        <use href="./images/sprite.svg#Logo-dark"></use>
+                    </svg>
+                </a>
+                <ul>
+                    <li class="title"><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="header-main">
+                <div class="logo-burger">
+                    <svg width="69" height="55" class="logo">
+                        <use href="./images/sprite.svg#Logo"></use>
+                    </svg>
+                    <button data-modal-open>
+                        <svg width="24" height="16" class="burger-menu">
+                            <use href="./images/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Услуги и цены</a></li>
+                            <li><a href="">Мастера</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-contacts">
+                        <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                        <button class="button">онлайн-запись</button>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="title">A hair salon for men in Kyiv</p>
+                    <h1>BarberShop
+                        <svg width="18px" height="30px">
+                            <use href="./images/sprite.svg#navigation"></use>
+                        </svg>
+                    </h1>
+                    <p>Мы эксперты в модных мужских стрижках.
+                        Работаем быстро, осторожно и со вкусом.
+                    </p>
+                </div>
+                <div class="slider-buttons">
+                    <ul>
+                        <li>Назад</li>
+                        <li>Вперед</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <aside>
-        <ul>
-            <li> <button type="button">Instagram</button> </li>
-            <li> <button type="button">Youtube</button> </li>
-        </ul>
-    </aside>
-
-    <main>
-         <section>
+    <section class="about_us">
+        <div class="container">
+            <div class="working_photo">
+                <picture>
+                    <source srcset="./images/img-1.webp" type="image/webp">
+                    <img srcset="./images/img-1.jpg 1x,
+                    ./images/img-1-x2.jpg 2x" src="./images/img-1.jpg" alt="Barber" width="330" />
+                </picture>
+                <picture>
+                    <source srcset="./images/img-2.webp" type="image/webp">
+                    <img srcset="./images/img-2.jpg 1x,
+                    ./images/img-2-x2.jpg 2x" src="./images/img-2.jpg" alt="Head" width="330" />
+                </picture>
+            </div>
+            <div class="working-info">
+                <p class="title">о нас</p>
+                <h3>Лучший Барбершоп <br>
+                    твоего города</h3>
+                <h4>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h4>
+                <p class="description">Мы команда, которая никогда не останавливается на достигнутом
+                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+                    Поэтому, мы всегда
+                    готовы усовершенствовать каждого, кто к нам приходит!</p>
+                <button class="button">онлайн-запись</button>
+            </div>
+        </div>
+    </section>
+    <section class="prices">
+        <div class="container">
+            <p class="title">Проведи время в компании лучших мастеров</p>
+            <h2>Услуги и цены</h2>
+            <div>
+                <ul class="first-block">
+                    <li class="price_item">
+                        <span>Мужская стрижка</span>
+                        <span class="price_underline"></span>
+                        <span>от 300 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Стрижка бороды</span>
+                        <span class="price_underline"></span>
+                        <span>от 200 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Стрижка усов</span>
+                        <span class="price_underline"></span>
+                        <span>от 200 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Бритье опасной бритвой</span>
+                        <span class="price_underline"></span>
+                        <span>от 200 грн.</span>
+                    </li>
+                </ul>
+                <ul class="second-block">
+                    <li class="price_item">
+                        <span>Cтрижка у стажера</span>
+                        <span class="price_underline"></span>
+                        <span>от 50 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Стрижка под насадку</span>
+                        <span class="price_underline"></span>
+                        <span>от 200 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Детская стрижка (до 12 лет)</span>
+                        <span class="price_underline"></span>
+                        <span>от 300 грн.</span>
+                    </li>
+                    <li class="price_item">
+                        <span>Камуфлирование седины</span>
+                        <span class="price_underline"></span>
+                        <span>от 200 грн.</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="button">онлайн-запись</button>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-text">
+                <p class="title">старая традиционная школа</p>
+                <h2>Почему приходят именно к нам?</h2>
+                <h3>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
+            </div>
+            <div class="advantages-blocks">
+                <ul>
+                    <li class="block">
+                        <span class="number">600</span>
+                        <span class="number_description">Довольных клиентов в день</span>
+                    </li>
+                    <li class="block">
+                        <span class="number">50</span>
+                        <span class="number_description">Наград за отличный сервис</span>
+                    </li>
+                    <li class="block">
+                        <span class="number">20</span>
+                        <span class="number_description">Лучших мастеров Киева</span>
+                    </li>
+                    <li class="block">
+                        <span class="number">100</span>
+                        <span class="number_description">Подарков постоянным клиентам</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="our_masters">
+        <div class="container">
+            <p class="title">для настоящих ценителей атмосферы</p>
+            <h2>Наши мастера</h2>
             <ul>
-                <li> <img src="./images/img 1.jpg" alt="shaving bread" width ="270">  </li>
-                <li> <img src="./images/img 2.jpg" alt="cuting hear" width ="270">  </li>
+                <li class="member">
+                    <picture>
+                        <source srcset="./images/img-3.webp" type="image/webp">
+                        <img srcset="./images/img-3.jpg 1x,
+                                    ./images/img-3-x2.jpg 2x" src="./images/img-370.jpg" alt="John Smith"
+                            width="418" />
+                    </picture>
+                    <p class="name">John Smith</p>
+                    <p class="profession">Extreme Barber</p>
+                    <ul class="social-links">
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="member">
+                    <picture>
+                        <source srcset="./images/img-4.webp" type="image/webp">
+                        <img srcset="./images/img-4.jpg 1x,
+                        ./images/img-4-x2.jpg 2x" src="./images/img-4.jpg" alt="Michele Doe" width="418" />
+                    </picture>
+                    <p class="name">Michele Doe</p>
+                    <p class="profession">Extreme Barber</p>
+                    <ul class="social-links">
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="member">
+                    <picture>
+                        <source srcset="./images/img-5.webp" type="image/webp">
+                        <img srcset="./images/img-5.jpg 1x,
+                        ./images/img-5-x2.jpg 2x" src="./images/img-5.jpg" alt="Alan Black" width="418" />
+                    </picture>
+                    <p class="name">Alan Black</p>
+                    <p class="profession">Extreme Barber</p>
+                    <ul class="social-links">
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </li>
             </ul>
-            <p>About</p>
-            <h2>Best Barbershop in your city</h2>
-            <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-            <p>We are a team that never stops at what has been achieved and are thirsty for changes.
-                And when you fall into the hands of our master, you will never be the same again.
-                We are a team that is always "on the same wave" with clients. 
-                Therefore, we are always ready to improve everyone who comes to us!</p>
-            <button type="button">ONLINE-BOOKING</button>
+            </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <p class="title">На латинском языке “барба” означает “борода”</p>
+            <ul>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-6.webp" type="image/webp">
+                        <img srcset="./images/img-6.jpg 1x,
+                    ./images/img-6-x2.jpg 2x" src="./images/img-6.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-7.webp" type="image/webp">
+                        <img srcset="./images/img-7.jpg 1x,
+                    ./images/img-7-x2.jpg 2x" src="./images/img-7.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-8.webp" type="image/webp">
+                        <img srcset="./images/img-8.jpg 1x,
+                        ./images/img-8-x2.jpg 2x" src="./images/img-8.jpg" width="418" />
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="./images/img-9.webp" type="image/webp">
+                        <img srcset="./images/img-9.jpg 1x,
+                    ./images/img-9-x2.jpg 2x" src="./images/img-9.jpg" width="418" />
+                    </picture>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="contact-us-contacts">
+        <section class="contact_us">
+            <div class="container">
+                <div class="online">
+                    <h2>Онлайн-запись</h2>
+                    <form>
+                        <div class="name-number">
+                            <label for="name">Имя*
+                                <input type="text" name="name" id="name" class="name">
+                            </label>
+                            <label>Телефон*
+                                <input type="number" class="number">
+                            </label>
+                        </div>
+                        <label>
+                            Сообщение*
+                            <input class="text" type="text">
+                        </label>
+                        <button class="button">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <p>Spend your time with the best masters</p>
-            <h2>Services and prices</h2>
-            <ul>
-                <li>Services and prices from 300 uah.</li>
-                <li>Beard trim from 300 uah.</li>
-                <li>Mustache trim from 200 uah.</li>
-                <li>Straight razor shave from 200 uah.</li>
-            </ul>
-            <ul>
-                <li>Trainee&#10076;s haircut from 50 uah.</li>
-                <li>Haircut under the nozzle from 200 uah.</li>
-                <li>Children&#10076;s haircut (0-12 y.o.) from 300 uah.</li>
-                <li>Camouflage of gray hair from 200 uah.</li>
-            </ul>
-            <button type="button">ONLINE-BOOKING</button>
+        <section class="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <ul>
+                    <li>
+                        <address><svg width="24" height="24">
+                                <use href="./images/sprite.svg#map"></use>
+                            </svg>ул. Васильковая, 7А
+                            Киев, 08132</address>
+                    </li>
+                    <li><a class="phone" href="tel:+38 044 111 11 11"> <svg width="24" height="24">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>+38 044 111 11 11</a></li>
+                    <li><a class="email" href="mailto:barbershop@email.com"><svg width="24" height="24">
+                                <use href="./images/sprite.svg#mail"></use>
+                            </svg>barbershop@email.com</a></li>
+                </ul>
+                <p class="title">время работы</p>
+                <p class="time">Ежедневно с 9:00 до 22:00</p>
+            </div>
         </section>
-
-        <section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span> <svg width="12" height="12">
+                    <use href="./images/sprite.svg#copyright"></use>
+                </svg>Copyright 2020</span>
             <ul>
-                <li>600 Satisfied customers per day</li>
-                <li>50 Awards for excellent service</li>
-                <li>20 Kyiv&#10076;s best barbers</li>
-                <li>100 Gifts for regular customers</li>
+                <li class="title"><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
             </ul>
-            <p>Old traditional school</p>
-            <h2>&#191;Why people come to us?</h2>
-            <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
-        </section>
-
-        <section>
-            <p>For true enjoyers of the atmosphere</p>
-            <h2>Our barbers</h2>
-            <ul>
-                <li><img src="./images/barber1.jpg" alt="men in tatoo" width="370">
-                <h3>John Smith</h3>
-                <p>Extreme Barber</p>
-        <ul>
-            <li> <a class = "link" href=""> <img src="/images/instagram.svg" alt="" width ="44"> </a> </li>
-            <li> <a class = "link" href=""> <img src="./images/group.svg" alt="" width ="44"> </a>    </li>
-            <li> <a class = "link" href=""> <img src="./images/vector.svg" alt="" width ="44"> </a>     </li>
-            <li> <a class = "link" href=""> <img src="./images/linkedin.svg" alt="" width ="44"> </a>  </li>
-        </ul>
-        </li>
-                <li><img src="./images/barber2.jpg" alt="men with hearcut machine" width="370">
-                <h3>Michele Doe</h3>
-                <p>Extreme Barber</p>
-        <ul>
-            <li> <a class = "link" href=""><img src="/images/instagram.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/group.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/vector.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/linkedin.svg" alt="" width ="44"></a> </li>
-        </ul>
-        </li>
-                <li><img src="./images/barber3.jpg" alt="bearded man with scissors" width="370">
-                <h3>Alan Black</h3>
-                <p>Extreme Barber</p>
-        <ul>
-            <li> <a class = "link" href=""><img src="/images/instagram.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/group.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/vector.svg" alt="" width ="44"></a> </li>
-            <li> <a class = "link" href=""><img src="./images/linkedin.svg" alt="" width ="44"></a> </li>
-        </ul>
-        </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2 class="hide"></h2>
-            <p>In Latin, "barba" means "beard"</p>
-            <ul>
-                <li> <img src="./images/work1.jpg" alt="the man is getting a haircut" width="270"> </li>
-                <li> <img src="./images/work2.jpg" alt="a man shaves another man" width="270"> </li>
-                <li> <img src="./images/work3.jpg" alt="a man steams " width="270"> </li>
-                <li> <img src="./images/work4.jpg" alt="tattooed hand with a razor" width="270"> </li>
-            </ul>
-        </section>
-
-        <section>
-            <ul>
-                <li>
-                    <h2>Online-booking</h2> 
-                </li>
-                <li>
-                   <p>Name*</p> 
-                </li>
-                <li>
-                    <p>Phone*</p>
-                </li>
-                <li>
-                    <p>Message</p>
-                </li>
-                <li>
-                    <button type="submit">send</button>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <h2>Contacts</h2>
-                </li>
-                <li> 
-                    <img src="./images/locate.svg" alt="" width="24"> st. Vasilkovaya, 7A Kiev, 08132
-                </li>
-                <li> 
-                    <a class = "link" href="tel:+38 044 111 11 11"><img src="./images/phone.svg" alt="" width="24"> +38 044 111 11 11</a> 
-                </li>
-                <li> 
-                    <a class = "link" href="mailto:"><img src="./images/mail.svg" alt="" width="24">barbershop@email.com</a>
-                </li>
-                <li>
-                    <p>Working hours</p>
-                    <p>Every day from 9:00 to 22:00</p>
-                </li>
-            </ul>
-        </section> 
-
-
-
-    </main>
-    <footer>
-        <p>&#169; Copyright 2020</p>
-        <ul>
-            <li> <button type="button">Instagram</button> </li>
-            <li> <button type="button">Youtube</button> </li>
-        </ul>
+        </div>
     </footer>
-   
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button-close" data-modal-close>
+                <svg width="24" height="16">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <ul class="modal-nav">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Услуги и цены</a></li>
+                <li><a href="">Мастера</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+
+            <ul class="modal-contacts">
+                <li><a href="tel:+38 044 111 11 11">+38 044 111 11 11</a></li>
+                <li><button>онлайн-запись</button></li>
+            </ul>
+
+            <ul class="modal-social">
+                <li><a href="" class="title">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="./js/modal.js"></script>
+
 </html>

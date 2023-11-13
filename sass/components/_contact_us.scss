@@ -1,0 +1,114 @@
+.contact-us-contacts {
+  @media screen and(min-width:1280px) {
+    display: flex;
+    section {
+      width: 50%;
+      .container {
+        width: 680px;
+      }
+    }
+  }
+}
+.contact_us {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and(min-width:768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  background-color: $color_dark_blue;
+  .online {
+    h2 {
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 49px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: $color_white;
+      margin-bottom: 44px;
+    }
+    form {
+      @media screen and(min-width:768px) {
+        .name-number {
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 330px;
+          }
+        }
+      }
+      @media screen and(min-width:1280px) {
+        .name-number {
+          input {
+            width: 270px;
+          }
+        }
+      }
+      label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.4);
+        padding-bottom: 8px;
+        transition: $transition_all;
+        &:hover,
+        &:focus {
+          color: $color_white;
+        }
+      }
+      input {
+        appearance: none;
+        outline: none;
+        background-color: $color_dark_blue;
+        width: 100%;
+        display: block;
+        margin-bottom: 44px;
+        border: none;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: $color_white;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &:hover,
+        &:focus {
+          color: $color_white;
+          appearance: none;
+          border-bottom: 1px solid $color_white;
+          color: $color_white;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 15px;
+          letter-spacing: 0.1em;
+        }
+      }
+      .text {
+        padding-top: 60px;
+      }
+    }
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      color: $color_white;
+      transition: $transition_all;
+      @media screen and (min-width: 768px) {
+        margin: 0px;
+      }
+    }
+  }
+}

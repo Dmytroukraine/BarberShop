@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  h1 {
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    color: $color_white;
+    @media screen and (min-width: 480px) {
+      font-size: 48px;
+    }
+  }
+  h2 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    margin: 0px;
+  }
+  h3 {
+    margin: 0px;
+  }
+  h4 {
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .title {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: $color_black;
+      height: 1px;
+      width: 60px;
+      margin-right: 20px;
+    }
+  }
+  .button {
+    width: 160px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border: 1px solid $color_orange;
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      color: $color_white;
+      background-color: $color_orange;
+    }
+  }
+  .container {
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      padding: 0px 31px 0px 31px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding: 0px 39px 0px 39px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding: 0px 55px 0px 55px;
+    }
+  }
+}
